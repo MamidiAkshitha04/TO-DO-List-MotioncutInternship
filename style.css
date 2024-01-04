@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+}
+.items{
+    z-index: 1;
+    background: linear-gradient(125deg,#0d0492,#611331,#555d8b);
+    width: 100%;
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: animate 10s ease infinite;
+    overflow-y: scroll;
+}
+
+h1{
+    padding-top: 50px;
+    font-size: 60px;
+    text-align: center;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+body{
+    display: flex;
+}
+.tbody1{
+    width: 90%;
+    max-width:470px;
+    background-color: #da9185;
+    color: black;
+    margin: 40px auto 0;
+    padding:35px 30px;
+    border-radius: 30px;
+}
+.tbody2 input,button{
+    font-size:20px;
+    padding:10px;
+    position: relative;
+    justify-content: space-between;
+    border-radius: 30px;
+    outline:0;
+    border:0;
+}
+#inputfield{
+    width: 80%;
+    padding-left: 15px;
+}
+
+#add{
+    background-color: #0d0492;
+    color: white;
+    margin-left:10px;
+    cursor: pointer;
+}
+ul{
+    margin-top: 25px;
+}
+ul li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 4px 12px 4px 12px;
+    margin-bottom: 12px;
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+
+.val{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 22px;
+    padding-left: 10px;
+    margin-bottom: 2px;
+    user-select: none;
+    border: 0;
+   
+}
+.text{
+    width: 90%;
+}
+.del-btn{
+    background-color: red;
+    height: 30px;
+    align-items: center;
+    padding: 8px;
+    padding-top: 3px;
+    color: white;
+    cursor: pointer;
+    margin-left: 3px;
+    font-size: 20px;
+}
+.edit{
+    background-color:yellow;
+    height: 30px;
+    align-items: center;
+    padding: 8px;
+    padding-top: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
